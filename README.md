@@ -33,3 +33,11 @@ Settings → Pages → Deploy from a branch → `main` → `/root`
   `assets/exquisite-corpse.ttf`
 
 If the file name is different, either rename it in GitHub or update the `@font-face` URL in `styles.css`.
+
+
+## v2.2 patch notes
+- Replaced the generic header with the actual MR. SATAN logo.
+- Removed the repeated visible “Plays good music.” hero heading under the logo.
+- Added a smaller branded hero tagline instead.
+- Kept a hidden H1 for accessibility/SEO.
+- Turned the nav into smaller branded pill buttons with a green Book button.
