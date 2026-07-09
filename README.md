@@ -24,3 +24,12 @@ If GitHub will not let you upload a whole folder at once:
 
 ## GitHub Pages
 Settings → Pages → Deploy from a branch → `main` → `/root`
+
+
+## v2.1 patch notes
+- Fixed the banner image crop by changing the visual banner from `cover` to `contain`.
+- Added CSS support for the Exquisite Corpse font.
+- Important: the font file is not included in this package. Upload your font file to:
+  `assets/exquisite-corpse.ttf`
+
+If the file name is different, either rename it in GitHub or update the `@font-face` URL in `styles.css`.
