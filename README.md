@@ -1,50 +1,26 @@
-# MR. SATAN EPK Landing Page
+# MR. SATAN EPK landing page — v2
 
-Static landing page for MR. SATAN — Industrial / EBM / Fetish DJ based in South Florida.
+Updated static site package with:
+- stronger hero
+- more emphasis on socials/listen links
+- recent photo-forward gallery
+- black background with purple/green glow instead of abstract devil art
+- downloadable approved PDF EPK
+- Formspree booking form
 
-## Live page
+## Upload checklist
+Upload these files/folders to the root of the GitHub repo:
+- index.html
+- styles.css
+- script.js
+- .nojekyll
+- assets/ (whole folder)
+- README.md
 
-After GitHub Pages is enabled, the project page should publish at:
+If GitHub will not let you upload a whole folder at once:
+1. upload the root files first
+2. create `assets/README.md`
+3. upload the asset files into the `assets` folder in smaller batches
 
-`https://krystal929-afk.github.io/Mr.Satan-EPK/`
-
-GitHub Pages may take a few minutes to update after changes.
-
-## Files
-
-- `index.html` — page content and Formspree booking form
-- `styles.css` — visual system and responsive layout
-- `script.js` — Formspree submission status behavior
-- `.nojekyll` — keeps GitHub Pages from applying Jekyll processing
-- `assets/` — optimized visuals and the approved PDF EPK
-
-## Booking form
-
-The form posts to Formspree:
-
-`https://formspree.io/f/mdarqnpp`
-
-Booking email:
-
-`mrsatanplaysgoodmusic@gmail.com`
-
-## Upload instructions
-
-1. Open the GitHub repo.
-2. Choose **Add file** → **Upload files**.
-3. Drag all files/folders from this package into the repo root.
-4. Commit directly to `main`.
-5. Go to **Settings** → **Pages**.
-6. Set source to **Deploy from a branch**.
-7. Choose `main` and `/root`, then save.
-
-## Brand notes
-
-Primary page identity:
-- Black dominant
-- Deep purple atmosphere
-- Toxic green accent
-- Real DJ/performance photos first
-- Cartoon/illustrated brand world used as secondary support only
-
-Do not lead the booking page with mascot/cartoon art unless the goal shifts from booking credibility to merch/social content.
+## GitHub Pages
+Settings → Pages → Deploy from a branch → `main` → `/root`

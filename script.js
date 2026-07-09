@@ -1,39 +1,26 @@
-const form = document.querySelector("#booking-form");
-const status = document.querySelector("#form-status");
+const form = document.getElementById('booking-form');
+const statusEl = document.getElementById('form-status');
 
-if (form && status) {
-  form.addEventListener("submit", async (event) => {
+if (form && statusEl) {
+  form.addEventListener('submit', async (event) => {
     event.preventDefault();
-
-    const button = form.querySelector("button[type='submit']");
-    const originalText = button.textContent;
-
-    status.textContent = "Sending...";
-    button.disabled = true;
-    button.textContent = "Sending";
+    statusEl.textContent = 'Sending…';
 
     try {
       const response = await fetch(form.action, {
-        method: form.method,
+        method: 'POST',
         body: new FormData(form),
-        headers: {
-          Accept: "application/json"
-        }
+        headers: { 'Accept': 'application/json' }
       });
 
       if (response.ok) {
         form.reset();
-        status.textContent = "Booking inquiry sent. We’ll get back to you soon.";
+        statusEl.textContent = 'Inquiry sent. Booking should receive it shortly.';
       } else {
-        const data = await response.json().catch(() => ({}));
-        const message = data?.errors?.map((error) => error.message).join(", ");
-        status.textContent = message || "Something went wrong. Please email mrsatanplaysgoodmusic@gmail.com directly.";
+        statusEl.textContent = 'Submission failed. Please try again or email directly.';
       }
     } catch (error) {
-      status.textContent = "Connection issue. Please email mrsatanplaysgoodmusic@gmail.com directly.";
-    } finally {
-      button.disabled = false;
-      button.textContent = originalText;
+      statusEl.textContent = 'Submission failed. Please try again or email directly.';
     }
   });
 }
