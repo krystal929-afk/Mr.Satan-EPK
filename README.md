@@ -41,3 +41,10 @@ If the file name is different, either rename it in GitHub or update the `@font-f
 - Added a smaller branded hero tagline instead.
 - Kept a hidden H1 for accessibility/SEO.
 - Turned the nav into smaller branded pill buttons with a green Book button.
+
+
+## v2.3 patch notes
+- Removed the duplicate full logo from the header.
+- Header now uses branded MR. SATAN text with EPK / South Florida subline.
+- Full “MR. SATAN Plays good music” graphic stays in the hero only.
+- Hero tagline was reduced so it does not fight the main logo.
