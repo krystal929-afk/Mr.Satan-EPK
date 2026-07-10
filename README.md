@@ -48,3 +48,18 @@ If the file name is different, either rename it in GitHub or update the `@font-f
 - Header now uses branded MR. SATAN text with EPK / South Florida subline.
 - Full “MR. SATAN Plays good music” graphic stays in the hero only.
 - Hero tagline was reduced so it does not fight the main logo.
+
+
+## v2.4 patch notes
+- Removed the header identity text.
+- Removed the small top Book button.
+- Header is now a subtle centered nav only: Socials / Experience / Photos.
+- Kept the main booking CTA in the hero section.
+
+
+## Final nav-only patch
+- Header is now ONLY Socials / Experience / Photos.
+- No MR. SATAN text in the top nav.
+- No EPK / South Florida text in the top nav.
+- No top Book button.
+- Added CSS override to hide any old header identity elements if GitHub cached/mixed files.
